@@ -1,6 +1,7 @@
 <div class="side-bar-header">
   <div class="header-name">
-    <a href="#">aaaa</a>
+    <%= link_to current_user.name, edit_user_path(current_user)%>
+    <%# →ユーザー名を表示し、リンクはユーザーの編集パスに設定 %>
   </div>
   <div class="create-room">
     <a href="#">チャットを作成する</a>
